@@ -1,6 +1,6 @@
 *
  * 
- * View importe venddido por los empleados*/
+ * View importe vendido por los empleados*/
 
 create view ImporteVendidoEmpleado as 
 select year(p.fecha_pedido), e.Nombre , e.Apellidos,round(sum(p.Importe),2)
